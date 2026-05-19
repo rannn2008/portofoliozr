@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" role="img" aria-labelledby="title desc">
+  <title id="title">Logo Ma'had Dar El-Ilmi</title>
+  <desc id="desc">Logo Dar El-Ilmi Pondok Pesantren Teknologi dan Informasi.</desc>
+  <rect width="560" height="400" fill="none"/>
+  <g transform="translate(280 155)">
+    <path d="M0-105C30-78 54-48 51-18 49 8 27 29 0 46-27 29-49 8-51-18-54-48-30-78 0-105Z" fill="#f3a126"/>
+    <path d="M0-49 18-12 0 24-18-12Z" fill="#061421"/>
+    <path d="M-20 65C-61 34-105 18-154 16l-22 83C-113 89-62 94-20 119Z" fill="#1eabd4"/>
+    <path d="M20 65C61 34 105 18 154 16l22 83C113 89 62 94 20 119Z" fill="#1eabd4"/>
+    <path d="M-82 107C-127 87-173 87-220 96l-30 82C-181 159-122 158-64 186Z" fill="#1d4797"/>
+    <path d="M82 107C127 87 173 87 220 96l30 82C181 159 122 158 64 186Z" fill="#1d4797"/>
+    <path d="M-170 126C-104 127-45 150 0 194 45 150 104 127 170 126 108 145 52 172 0 221-52 172-108 145-170 126Z" fill="#162d65"/>
+  </g>
+  <text x="280" y="312" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="800" letter-spacing="3" fill="#1d4797">DAR EL-ILMI</text>
+  <text x="280" y="352" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#209fc2">Pondok Pesantren Teknologi &amp; Informasi</text>
+</svg>
