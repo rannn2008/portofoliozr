@@ -532,20 +532,35 @@
       background: rgba(255, 255, 255, 0.07);
     }
 
-    .education-dot {
+    .education-logo {
       position: relative;
       z-index: 2;
       display: grid;
       place-items: center;
-      width: 40px;
-      height: 40px;
+      width: 58px;
+      height: 58px;
       margin-left: 0;
       border: 1px solid rgba(46, 231, 242, 0.42);
-      border-radius: 50%;
-      background: rgba(7, 12, 19, 0.96);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.94);
       color: var(--cyan);
       font-size: 0.74rem;
       font-weight: 900;
+      overflow: hidden;
+    }
+
+    .education-logo img {
+      max-width: 82%;
+      max-height: 82%;
+      object-fit: contain;
+    }
+
+    .education-logo.fallback {
+      background:
+        linear-gradient(135deg, rgba(46, 231, 242, 0.14), rgba(255, 189, 103, 0.1)),
+        rgba(7, 12, 19, 0.96);
+      color: var(--amber);
+      letter-spacing: 0;
     }
 
     .education-card h3 {
@@ -1080,7 +1095,9 @@
 
         <div class="education-timeline" aria-label="Riwayat pendidikan Zahran Al Syafit">
           <article class="education-card">
-            <span class="education-dot">01</span>
+            <span class="education-logo">
+              <img src="assets/aisyiyah-logo.png" alt="Logo Aisyiyah">
+            </span>
             <div>
               <h3>PAUD Aisyiyah, Padang</h3>
               <p>Awal perjalanan pendidikan dan pembentukan dasar belajar.</p>
@@ -1089,7 +1106,9 @@
           </article>
 
           <article class="education-card">
-            <span class="education-dot">02</span>
+            <span class="education-logo">
+              <img src="assets/adzkia-logo.png" alt="Logo Adzkia">
+            </span>
             <div>
               <h3>TK Adzkia, Padang</h3>
               <p>Masa pengembangan dasar membaca, berinteraksi, dan berani belajar hal baru.</p>
@@ -1098,7 +1117,9 @@
           </article>
 
           <article class="education-card">
-            <span class="education-dot">03</span>
+            <span class="education-logo">
+              <img src="assets/adzkia-logo.png" alt="Logo Adzkia">
+            </span>
             <div>
               <h3>SD Adzkia, Padang</h3>
               <p>Memperkuat dasar akademik, disiplin, dan kebiasaan belajar.</p>
@@ -1107,7 +1128,9 @@
           </article>
 
           <article class="education-card">
-            <span class="education-dot">04</span>
+            <span class="education-logo">
+              <img src="assets/dar-el-iman-logo.webp" alt="Logo Dar El Iman">
+            </span>
             <div>
               <h3>SMP/MTs Dar El Iman, Padang</h3>
               <p>Mulai membangun karakter, kemandirian, pengalaman keagamaan, dan public speaking.</p>
@@ -1116,9 +1139,11 @@
           </article>
 
           <article class="education-card">
-            <span class="education-dot">05</span>
+            <span class="education-logo">
+              <img src="assets/dar-el-ilmi-logo.png" alt="Logo Dar El Ilmi">
+            </span>
             <div>
-              <h3>Dar El Ilmi</h3>
+              <h3>Dar El Ilmi, Payakumbuh</h3>
               <p>Jurusan Teknik Komputer Jaringan, dengan fokus pada jaringan komputer, IoT, web development, dan project digital.</p>
             </div>
             <span class="education-year">2023-2026</span>
