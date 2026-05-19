@@ -1,14 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 340" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 180" role="img" aria-labelledby="title desc">
   <title id="title">Logo Ma'had Dar El-Ilmi</title>
-  <desc id="desc">Simbol logo Dar El-Ilmi berupa pena dan buku.</desc>
-  <rect width="560" height="340" fill="none"/>
-  <g transform="translate(280 112) scale(1.05)">
-    <path d="M0-105C30-78 54-48 51-18 49 8 27 29 0 46-27 29-49 8-51-18-54-48-30-78 0-105Z" fill="#f3a126"/>
-    <path d="M0-49 18-12 0 24-18-12Z" fill="#061421"/>
-    <path d="M-20 65C-61 34-105 18-154 16l-22 83C-113 89-62 94-20 119Z" fill="#1eabd4"/>
-    <path d="M20 65C61 34 105 18 154 16l22 83C113 89 62 94 20 119Z" fill="#1eabd4"/>
-    <path d="M-82 107C-127 87-173 87-220 96l-30 82C-181 159-122 158-64 186Z" fill="#1d4797"/>
-    <path d="M82 107C127 87 173 87 220 96l30 82C181 159 122 158 64 186Z" fill="#1d4797"/>
-    <path d="M-170 126C-104 127-45 150 0 194 45 150 104 127 170 126 108 145 52 172 0 221-52 172-108 145-170 126Z" fill="#162d65"/>
+  <desc id="desc">Simbol Ma'had Dar El-Ilmi berupa pena oranye dan buku terbuka biru.</desc>
+  <rect width="280" height="180" fill="none"/>
+  <g transform="translate(140 92)">
+    <path d="M0-74C24-53 38-30 36-9 35 11 20 27 0 42-20 27-35 11-36-9-38-30-24-53 0-74Z" fill="#ff9417"/>
+    <path d="M0-34 12-8 0 20-12-8Z" fill="#ffffff"/>
+    <path d="M-17 45C-43 21-70 9-102 3l-15 51C-77 49-45 55-17 78Z" fill="#18a9d7"/>
+    <path d="M17 45C43 21 70 9 102 3l15 51C77 49 45 55 17 78Z" fill="#18a9d7"/>
+    <path d="M-67 62C-96 55-124 56-154 65l-15 44C-124 94-87 93-49 112Z" fill="#173e8f"/>
+    <path d="M67 62C96 55 124 56 154 65l15 44C124 94 87 93 49 112Z" fill="#173e8f"/>
   </g>
 </svg>
