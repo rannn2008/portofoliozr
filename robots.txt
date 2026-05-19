@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zahranalsyafit-portofolio.vercel.app/sitemap.xml
