@@ -447,6 +447,7 @@
 
     .about-copy,
     .focus-box,
+    .education-card,
     .skill-card,
     .project-card,
     .experience-card,
@@ -493,6 +494,80 @@
       padding: 8px 11px;
       font-size: 0.88rem;
       font-weight: 700;
+    }
+
+    .education-timeline {
+      position: relative;
+      display: grid;
+      gap: 14px;
+    }
+
+    .education-timeline::before {
+      content: "";
+      position: absolute;
+      left: 19px;
+      top: 18px;
+      bottom: 18px;
+      width: 2px;
+      background: linear-gradient(180deg, var(--cyan), var(--amber));
+      opacity: 0.55;
+    }
+
+    .education-card {
+      position: relative;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 18px;
+      padding: 20px 22px 20px 0;
+      background:
+        linear-gradient(135deg, rgba(46, 231, 242, 0.08), rgba(255, 189, 103, 0.04)),
+        rgba(255, 255, 255, 0.045);
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+    }
+
+    .education-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255, 189, 103, 0.32);
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .education-dot {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      margin-left: 0;
+      border: 1px solid rgba(46, 231, 242, 0.42);
+      border-radius: 50%;
+      background: rgba(7, 12, 19, 0.96);
+      color: var(--cyan);
+      font-size: 0.74rem;
+      font-weight: 900;
+    }
+
+    .education-card h3 {
+      font-size: 1.08rem;
+      line-height: 1.2;
+      margin-bottom: 5px;
+    }
+
+    .education-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .education-year {
+      justify-self: end;
+      border: 1px solid rgba(255, 189, 103, 0.25);
+      border-radius: 999px;
+      padding: 8px 11px;
+      color: var(--amber);
+      font-size: 0.86rem;
+      font-weight: 900;
+      white-space: nowrap;
     }
 
     .skills-grid {
@@ -831,6 +906,16 @@
         grid-template-columns: 1fr;
       }
 
+      .education-card {
+        grid-template-columns: auto 1fr;
+        padding-right: 18px;
+      }
+
+      .education-year {
+        grid-column: 2;
+        justify-self: start;
+      }
+
       .hero-actions a {
         width: 100%;
       }
@@ -876,6 +961,7 @@
       </a>
       <nav class="nav-links" aria-label="Navigasi utama">
         <a href="#about">Tentang</a>
+        <a href="#education">Pendidikan</a>
         <a href="#skills">Skill</a>
         <a href="#projects">Project</a>
         <a href="#certificates">Sertifikat</a>
@@ -978,6 +1064,65 @@
               <li>Public Speaking</li>
             </ul>
           </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="site-shell">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Pendidikan</p>
+            <h2>Perjalanan belajar dari awal sampai TKJ.</h2>
+          </div>
+          <p>Riwayat pendidikan ini menunjukkan proses belajar yang membentuk dasar karakter, kedisiplinan, dan minat saya pada teknologi.</p>
+        </div>
+
+        <div class="education-timeline" aria-label="Riwayat pendidikan Zahran Al Syafit">
+          <article class="education-card">
+            <span class="education-dot">01</span>
+            <div>
+              <h3>PAUD Aisyiyah, Padang</h3>
+              <p>Awal perjalanan pendidikan dan pembentukan dasar belajar.</p>
+            </div>
+            <span class="education-year">2013</span>
+          </article>
+
+          <article class="education-card">
+            <span class="education-dot">02</span>
+            <div>
+              <h3>TK Adzkia, Padang</h3>
+              <p>Masa pengembangan dasar membaca, berinteraksi, dan berani belajar hal baru.</p>
+            </div>
+            <span class="education-year">2014</span>
+          </article>
+
+          <article class="education-card">
+            <span class="education-dot">03</span>
+            <div>
+              <h3>SD Adzkia, Padang</h3>
+              <p>Memperkuat dasar akademik, disiplin, dan kebiasaan belajar.</p>
+            </div>
+            <span class="education-year">2014-2020</span>
+          </article>
+
+          <article class="education-card">
+            <span class="education-dot">04</span>
+            <div>
+              <h3>SMP/MTs Dar El Iman, Padang</h3>
+              <p>Mulai membangun karakter, kemandirian, pengalaman keagamaan, dan public speaking.</p>
+            </div>
+            <span class="education-year">2020-2023</span>
+          </article>
+
+          <article class="education-card">
+            <span class="education-dot">05</span>
+            <div>
+              <h3>Dar El Ilmi</h3>
+              <p>Jurusan Teknik Komputer Jaringan, dengan fokus pada jaringan komputer, IoT, web development, dan project digital.</p>
+            </div>
+            <span class="education-year">2023-2026</span>
+          </article>
         </div>
       </div>
     </section>
