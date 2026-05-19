@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Zahran Al Syafit, siswa TKJ dengan minat pada jaringan komputer, IoT, web development, public speaking, dan kepemimpinan.">
+  <meta name="author" content="Zahran Al Syafit">
+  <meta name="theme-color" content="#081018">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zahran Al Syafit | Portfolio TKJ & IoT">
+  <meta property="og:description" content="Portfolio siswa TKJ dengan minat pada jaringan komputer, IoT, web development, leadership, dan public speaking.">
+  <meta property="og:image" content="assets/hero-tech.png">
+  <meta property="og:locale" content="id_ID">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zahran Al Syafit | Portfolio TKJ & IoT">
+  <meta name="twitter:description" content="Portfolio siswa TKJ dengan project IoT, web development, dan pengalaman leadership.">
+  <meta name="twitter:image" content="assets/hero-tech.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <title>Zahran Al Syafit | Portfolio</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Zahran Al Syafit",
+      "jobTitle": "Siswa TKJ",
+      "description": "Siswa TKJ dengan minat pada jaringan komputer, IoT, web development, public speaking, dan leadership.",
+      "knowsAbout": [
+        "Internet of Things",
+        "Computer Networking",
+        "Web Development",
+        "C++",
+        "Public Speaking",
+        "Leadership",
+        "Design and Branding"
+      ],
+      "telephone": "+6281376917611"
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #081018;
+      --panel: #101a24;
+      --panel-soft: rgba(255, 255, 255, 0.06);
+      --text: #edf6ff;
+      --muted: #a8b7c7;
+      --line: rgba(255, 255, 255, 0.12);
+      --cyan: #2ee7f2;
+      --green: #6ff5a8;
+      --amber: #ffbd67;
+      --rose: #ff7b9c;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 8% 8%, rgba(46, 231, 242, 0.18), transparent 26rem),
+        radial-gradient(circle at 85% 4%, rgba(255, 189, 103, 0.12), transparent 28rem),
+        linear-gradient(135deg, #071018 0%, #0d141e 42%, #07131b 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .site-shell {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid var(--line);
+      background: rgba(8, 16, 24, 0.78);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border: 1px solid rgba(46, 231, 242, 0.35);
+      border-radius: 8px;
+      background: linear-gradient(145deg, rgba(46, 231, 242, 0.18), rgba(111, 245, 168, 0.08));
+      color: var(--cyan);
+      box-shadow: 0 0 24px rgba(46, 231, 242, 0.18);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .nav-links a {
+      padding: 10px 12px;
+      border-radius: 8px;
+      transition: 180ms ease;
+    }
+
+    .nav-links a:hover {
+      background: var(--panel-soft);
+      color: var(--text);
+    }
+
+    .nav-cta,
+    .primary-btn,
+    .secondary-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 44px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      padding: 0 16px;
+      font-weight: 800;
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+    }
+
+    .nav-cta,
+    .primary-btn {
+      background: linear-gradient(135deg, var(--cyan), var(--green));
+      color: #061018;
+      box-shadow: 0 14px 42px rgba(46, 231, 242, 0.22);
+    }
+
+    .secondary-btn {
+      border-color: var(--line);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text);
+    }
+
+    .nav-cta:hover,
+    .primary-btn:hover,
+    .secondary-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.98fr);
+      align-items: center;
+      min-height: calc(100vh - 72px);
+      padding: 72px 0 54px;
+      gap: 42px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      width: fit-content;
+      border: 1px solid rgba(111, 245, 168, 0.28);
+      border-radius: 999px;
+      background: rgba(111, 245, 168, 0.08);
+      color: var(--green);
+      padding: 8px 12px;
+      font-size: 0.88rem;
+      font-weight: 800;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: currentColor;
+      box-shadow: 0 0 20px currentColor;
+    }
+
+    h1 {
+      margin-top: 22px;
+      max-width: 720px;
+      font-size: clamp(2.7rem, 7vw, 5.8rem);
+      line-height: 0.95;
+      letter-spacing: 0;
+    }
+
+    .hero h1 span {
+      color: transparent;
+      background: linear-gradient(135deg, #ffffff 0%, var(--cyan) 48%, var(--amber) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
+    .hero-lead {
+      max-width: 680px;
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.14rem);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 34px;
+      max-width: 640px;
+    }
+
+    .stat {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.045);
+      padding: 16px;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--text);
+      font-size: 1.7rem;
+      line-height: 1;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 560px;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: var(--shadow);
+      isolation: isolate;
+    }
+
+    .hero-visual img {
+      width: 100%;
+      height: 100%;
+      min-height: 560px;
+      object-fit: cover;
+    }
+
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, transparent 52%, rgba(8, 16, 24, 0.84)),
+        linear-gradient(90deg, rgba(8, 16, 24, 0.26), transparent 42%);
+      z-index: 1;
+    }
+
+    .signal-panel {
+      position: absolute;
+      right: 18px;
+      bottom: 18px;
+      z-index: 2;
+      width: min(320px, calc(100% - 36px));
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 8px;
+      background: rgba(8, 16, 24, 0.72);
+      backdrop-filter: blur(18px);
+      padding: 16px;
+    }
+
+    .signal-panel p {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .signal-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .signal-row span {
+      height: 7px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--cyan), var(--green));
+      opacity: 0.34;
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+
+    .signal-row span:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .signal-row span:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    .signal-row span:nth-child(4) {
+      animation-delay: 0.6s;
+    }
+
+    @keyframes pulse {
+      50% {
+        opacity: 1;
+      }
+    }
+
+    section {
+      padding: 78px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+
+    .section-kicker {
+      color: var(--cyan);
+      font-size: 0.86rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin-top: 7px;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    .section-heading p {
+      max-width: 440px;
+      color: var(--muted);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.72fr;
+      gap: 20px;
+    }
+
+    .profile-card {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 22px;
+      align-items: center;
+      margin-bottom: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: linear-gradient(145deg, rgba(46, 231, 242, 0.12), rgba(255, 255, 255, 0.045));
+      padding: 18px;
+    }
+
+    .profile-photo {
+      position: relative;
+      aspect-ratio: 4 / 5;
+      overflow: hidden;
+      border-radius: 8px;
+      border: 1px solid rgba(46, 231, 242, 0.28);
+      background:
+        linear-gradient(180deg, rgba(46, 231, 242, 0.16), rgba(255, 189, 103, 0.1)),
+        #0d1721;
+    }
+
+    .profile-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .photo-placeholder {
+      position: absolute;
+      inset: 0;
+      display: none;
+      place-items: center;
+      padding: 20px;
+      text-align: center;
+      color: var(--muted);
+      font-weight: 800;
+    }
+
+    .profile-photo img[style*="display: none"] + .photo-placeholder {
+      display: grid;
+    }
+
+    .profile-note h3 {
+      font-size: 1.45rem;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .profile-note p {
+      color: var(--muted);
+    }
+
+    .profile-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .about-copy,
+    .focus-box,
+    .skill-card,
+    .project-card,
+    .experience-card,
+    .contact-box {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.055);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+    }
+
+    .about-copy {
+      padding: clamp(22px, 4vw, 34px);
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .focus-box {
+      display: grid;
+      align-content: space-between;
+      gap: 22px;
+      padding: 24px;
+      background: linear-gradient(145deg, rgba(46, 231, 242, 0.12), rgba(255, 189, 103, 0.06));
+    }
+
+    .focus-box strong {
+      display: block;
+      font-size: 1.35rem;
+      line-height: 1.2;
+    }
+
+    .focus-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      list-style: none;
+    }
+
+    .focus-list li,
+    .tag {
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--muted);
+      padding: 8px 11px;
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .skill-card {
+      min-height: 210px;
+      padding: 22px;
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+    }
+
+    .skill-card:hover,
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(46, 231, 242, 0.34);
+      background: rgba(255, 255, 255, 0.075);
+    }
+
+    .skill-icon {
+      display: grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      background: rgba(46, 231, 242, 0.11);
+      color: var(--cyan);
+      font-weight: 900;
+    }
+
+    .skill-card h3,
+    .project-card h3,
+    .experience-card h3 {
+      font-size: 1.12rem;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    .skill-card p,
+    .project-card p,
+    .experience-card p {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .project-card {
+      display: grid;
+      gap: 18px;
+      min-height: 250px;
+      padding: 24px;
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+    }
+
+    .project-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .project-number {
+      color: var(--amber);
+      font-weight: 900;
+      font-size: 0.9rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-self: end;
+    }
+
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-self: end;
+      margin-top: 4px;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 14px;
+      border: 1px solid rgba(46, 231, 242, 0.28);
+      border-radius: 999px;
+      background: rgba(46, 231, 242, 0.08);
+      color: var(--white);
+      font-size: 0.9rem;
+      font-weight: 800;
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+    }
+
+    .project-link:hover {
+      transform: translateY(-2px);
+      border-color: rgba(46, 231, 242, 0.58);
+      background: rgba(46, 231, 242, 0.14);
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .certificates-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .certificate-card {
+      display: grid;
+      gap: 16px;
+      min-height: 260px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.055);
+      padding: 22px;
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+    }
+
+    .certificate-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 189, 103, 0.38);
+      background: rgba(255, 255, 255, 0.075);
+    }
+
+    .certificate-preview {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 172px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 8px;
+      background:
+        linear-gradient(135deg, rgba(46, 231, 242, 0.1), rgba(255, 189, 103, 0.08)),
+        rgba(8, 16, 24, 0.34);
+      color: var(--amber);
+      font-weight: 900;
+    }
+
+    .certificate-preview.is-pdf {
+      align-items: stretch;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+    }
+
+    .certificate-preview iframe {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      min-height: 210px;
+      border: 0;
+      pointer-events: none;
+      background: #ffffff;
+    }
+
+    .certificate-label {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      z-index: 3;
+      max-width: calc(100% - 24px);
+      padding: 7px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 999px;
+      background: rgba(7, 12, 19, 0.8);
+      color: var(--white);
+      font-size: 0.75rem;
+      line-height: 1;
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      backdrop-filter: blur(14px);
+    }
+
+    .certificate-fallback {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+      background:
+        linear-gradient(135deg, rgba(46, 231, 242, 0.16), rgba(255, 189, 103, 0.12)),
+        rgba(8, 16, 24, 0.92);
+      color: var(--amber);
+      text-align: center;
+    }
+
+    .certificate-card h3 {
+      font-size: 1.12rem;
+      line-height: 1.25;
+    }
+
+    .certificate-card p {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .certificate-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-self: end;
+    }
+
+    .experience-card {
+      padding: 24px;
+    }
+
+    .experience-card:nth-child(2) {
+      background: linear-gradient(145deg, rgba(111, 245, 168, 0.1), rgba(255, 255, 255, 0.045));
+    }
+
+    .experience-card:nth-child(3) {
+      background: linear-gradient(145deg, rgba(255, 123, 156, 0.1), rgba(255, 255, 255, 0.045));
+    }
+
+    .contact {
+      padding-bottom: 96px;
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 24px;
+      padding: clamp(24px, 5vw, 42px);
+      background:
+        linear-gradient(135deg, rgba(46, 231, 242, 0.14), rgba(255, 189, 103, 0.08)),
+        rgba(255, 255, 255, 0.055);
+    }
+
+    .contact-box p {
+      max-width: 620px;
+      margin-top: 12px;
+      color: var(--muted);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 26px 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 920px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero,
+      .about-grid,
+      .profile-card,
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 52px;
+      }
+
+      .hero-visual {
+        min-height: 430px;
+      }
+
+      .hero-visual img {
+        min-height: 430px;
+      }
+
+      .skills-grid,
+      .certificates-grid,
+      .experience-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .site-shell {
+        width: min(100% - 26px, 1180px);
+      }
+
+      .nav-inner {
+        min-height: 66px;
+      }
+
+      .brand span:last-child {
+        max-width: 150px;
+        line-height: 1.1;
+      }
+
+      .nav-cta {
+        min-width: 44px;
+        padding: 0 12px;
+        font-size: 0;
+      }
+
+      .nav-cta::before {
+        content: "WA";
+        font-size: 0.9rem;
+      }
+
+      .hero {
+        gap: 28px;
+        padding-bottom: 34px;
+      }
+
+      .hero-stats,
+      .skills-grid,
+      .projects-grid,
+      .certificates-grid,
+      .experience-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions a {
+        width: 100%;
+      }
+
+      .profile-actions a {
+        width: 100%;
+      }
+
+      .hero-visual,
+      .hero-visual img {
+        min-height: 360px;
+      }
+
+      section {
+        padding: 56px 0;
+      }
+
+      .section-heading {
+        display: block;
+      }
+
+      .section-heading p {
+        margin-top: 12px;
+      }
+
+      .project-top {
+        display: block;
+      }
+
+      .project-number {
+        display: inline-block;
+        margin-bottom: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="site-shell nav-inner">
+      <a class="brand" href="#home" aria-label="Zahran Al Syafit">
+        <span class="brand-mark">ZR</span>
+        <span>Zahran Al Syafit</span>
+      </a>
+      <nav class="nav-links" aria-label="Navigasi utama">
+        <a href="#about">Tentang</a>
+        <a href="#skills">Skill</a>
+        <a href="#projects">Project</a>
+        <a href="#certificates">Sertifikat</a>
+        <a href="#experience">Pengalaman</a>
+      </nav>
+      <a class="nav-cta" href="https://wa.me/6281376917611" target="_blank" rel="noopener">Hubungi Saya</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <div class="site-shell hero">
+      <div>
+        <p class="eyebrow">Siswa TKJ | IoT Enthusiast | Future Builder</p>
+        <h1>Membangun ide teknologi yang <span>bermanfaat.</span></h1>
+        <p class="hero-lead">
+          Saya adalah siswa kelas 12 dengan minat besar pada jaringan komputer, IoT, pengembangan proyek digital, public speaking, dan pengembangan diri. Saya senang belajar hal baru, membuat inovasi, dan terus berkembang menjadi pribadi yang bermanfaat bagi agama, keluarga, dan masyarakat.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#projects">Lihat Project</a>
+          <a class="secondary-btn" href="cv-zahran.html" target="_blank" rel="noopener">Lihat CV</a>
+          <a class="secondary-btn" href="https://wa.me/6281376917611" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="hero-stats" aria-label="Ringkasan profil">
+          <div class="stat">
+            <strong>12</strong>
+            <span>Kelas saat ini</span>
+          </div>
+          <div class="stat">
+            <strong>7+</strong>
+            <span>Bidang skill</span>
+          </div>
+          <div class="stat">
+            <strong>1 Th</strong>
+            <span>Ketua ORSAN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Visual teknologi portofolio">
+        <img src="assets/hero-tech.png" alt="Ilustrasi modern siswa teknologi sedang mengerjakan proyek IoT dan jaringan komputer">
+        <div class="signal-panel">
+          <div class="signal-row" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p>IoT, networking, web publishing, leadership, dan public speaking dalam satu arah pengembangan.</p>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="site-shell">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Tentang Saya</p>
+            <h2>Teknologi, nilai, dan keberanian untuk terus belajar.</h2>
+          </div>
+          <p>Profil ini merangkum perjalanan belajar, minat, project, dan pengalaman yang sedang saya bangun.</p>
+        </div>
+
+        <div class="profile-card">
+          <div class="profile-photo">
+            <img src="assets/profile.png" alt="Foto profil Zahran Al Syafit" onerror="this.style.display='none'">
+            <div class="photo-placeholder">Letakkan foto asli sebagai assets/profile.png</div>
+          </div>
+          <div class="profile-note">
+            <h3>Zahran Al Syafit</h3>
+            <p>Siswa TKJ yang berfokus pada teknologi, IoT, jaringan komputer, web development, kepemimpinan, dan public speaking.</p>
+            <div class="profile-actions">
+              <a class="primary-btn" href="cv-zahran.html" target="_blank" rel="noopener">Buka CV</a>
+              <a class="secondary-btn" href="https://wa.me/6281376917611" target="_blank" rel="noopener">Kontak WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-copy">
+            <p>
+              Saya memiliki minat besar dalam bidang teknologi, khususnya jaringan komputer, Internet of Things, dan pengembangan proyek digital. Saya terbiasa mengembangkan ide dari konsep menjadi rancangan yang bisa diuji, dipresentasikan, dan dikembangkan lagi.
+            </p>
+            <br>
+            <p>
+              Di luar teknologi, saya juga tertarik pada bidang keagamaan, public speaking, dan kepemimpinan. Bagi saya, kemampuan teknis perlu berjalan bersama karakter, komunikasi, tanggung jawab, dan niat untuk memberi manfaat.
+            </p>
+          </article>
+
+          <aside class="focus-box">
+            <div>
+              <strong>Fokus pengembangan saat ini</strong>
+              <p style="margin-top: 10px; color: var(--muted);">Meningkatkan kemampuan IT sambil membangun project nyata dan pengalaman organisasi.</p>
+            </div>
+            <ul class="focus-list">
+              <li>Jaringan Komputer</li>
+              <li>IoT</li>
+              <li>ESP32</li>
+              <li>Web</li>
+              <li>C++</li>
+              <li>Public Speaking</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="site-shell">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Skill</p>
+            <h2>Kemampuan yang terus saya asah.</h2>
+          </div>
+          <p>Dari teknis sampai komunikasi, setiap skill menjadi bagian dari proses membangun project yang lebih matang.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon">IoT</div>
+            <h3>Technology & IoT</h3>
+            <p>Minat dan kemampuan dasar pada jaringan komputer, Internet of Things, sensor, serta mikrokontroler.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">WEB</div>
+            <h3>Web Development</h3>
+            <p>Mampu membuat website sederhana dan menggunakan GitHub serta Vercel untuk publikasi project online.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">C++</div>
+            <h3>Programming</h3>
+            <p>Sedang mempelajari dasar pemrograman C++ sebagai bekal pengembangan sistem dan project teknologi.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">MIC</div>
+            <h3>Public Speaking</h3>
+            <p>Berpengalaman dalam pidato, kultum, dan presentasi di kegiatan sekolah maupun acara resmi.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">LEAD</div>
+            <h3>Leadership</h3>
+            <p>Pernah memimpin organisasi santri selama satu tahun dengan tanggung jawab dan kerja sama tim.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">ART</div>
+            <h3>Design & Branding</h3>
+            <p>Mampu membuat konsep desain sederhana seperti logo, poster, CV, sertifikat, dan identitas visual.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">IDE</div>
+            <h3>Problem Solving & Creativity</h3>
+            <p>Terbiasa mencari solusi kreatif untuk ide project, masalah teknis, dan inovasi yang bermanfaat.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="site-shell">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Project</p>
+            <h2>Ide dan karya yang sedang dibangun.</h2>
+          </div>
+          <p>Project ini menunjukkan arah minat saya pada IoT, sistem otomatis, web, dan inovasi digital.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-number">01</span>
+              <h3>Spot Finder / Smart Parking System</h3>
+            </div>
+            <p>Project IoT berbasis sensor dan mikrokontroler untuk mendeteksi ketersediaan slot parkir otomatis menggunakan ESP32/Arduino, sensor ultrasonik, RFID, servo gate, OLED, dan indikator LED.</p>
+            <div class="tags">
+              <span class="tag">ESP32</span>
+              <span class="tag">Sensor</span>
+              <span class="tag">RFID</span>
+              <span class="tag">Smart Parking</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-number">02</span>
+              <h3>Smart Face & Voice Door Lock</h3>
+            </div>
+            <p>Konsep sistem keamanan pintu otomatis berbasis pengenalan wajah dan verifikasi suara menggunakan ESP32-CAM, voice recognition, serta solenoid atau servo lock.</p>
+            <div class="tags">
+              <span class="tag">Security</span>
+              <span class="tag">ESP32-CAM</span>
+              <span class="tag">Voice</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-number">03</span>
+              <h3>NeoID - Portable AI Identity</h3>
+            </div>
+            <p>Konsep KTP AI portabel yang dapat berbicara otomatis, berjalan offline, dan hanya aktif oleh pemiliknya sebagai ide inovasi teknologi masa depan.</p>
+            <div class="tags">
+              <span class="tag">AI Concept</span>
+              <span class="tag">Identity</span>
+              <span class="tag">Offline</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-number">04</span>
+              <h3>Website Esteller ZR</h3>
+            </div>
+            <p>Website sederhana untuk usaha Esteller ZR yang dikembangkan dan dipublikasikan secara online menggunakan GitHub dan Vercel.</p>
+            <div class="tags">
+              <span class="tag">Website</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">Vercel</span>
+            </div>
+            <div class="project-links">
+              <a class="project-link" href="https://estellerzrpadang.vercel.app/" target="_blank" rel="noopener">Buka Website</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <div class="site-shell">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Sertifikat</p>
+            <h2>Bukti belajar dan pengembangan kemampuan.</h2>
+          </div>
+          <p>Sertifikat pelatihan dan pembelajaran teknologi dapat dilampirkan di sini sebagai penguat portfolio.</p>
+        </div>
+
+        <div class="certificates-grid">
+          <article class="certificate-card">
+            <div class="certificate-preview">Dicoding</div>
+            <div>
+              <h3>Dicoding</h3>
+              <p>Sertifikat pembelajaran teknologi dan pemrograman dari Dicoding.</p>
+            </div>
+            <div class="certificate-actions">
+              <a class="secondary-btn" href="assets/certificates/sertifikat%20dicoding.pdf" target="_blank" rel="noopener">Lihat Sertifikat</a>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-preview">Dicoding</div>
+            <div>
+              <h3>Dicoding 2</h3>
+              <p>Sertifikat lanjutan pembelajaran teknologi dari Dicoding.</p>
+            </div>
+            <div class="certificate-actions">
+              <a class="secondary-btn" href="assets/certificates/sertifikat%20dicoding%202.pdf" target="_blank" rel="noopener">Lihat Sertifikat</a>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-preview">Dicoding</div>
+            <div>
+              <h3>Dicoding 3</h3>
+              <p>Sertifikat tambahan pembelajaran teknologi dan pengembangan kemampuan digital.</p>
+            </div>
+            <div class="certificate-actions">
+              <a class="secondary-btn" href="assets/certificates/sertifikata%20dicoding%203.pdf" target="_blank" rel="noopener">Lihat Sertifikat</a>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-preview">Dicoding</div>
+            <div>
+              <h3>Dicoding 4</h3>
+              <p>Sertifikat pembelajaran lanjutan dari Dicoding sebagai penguat portfolio teknologi.</p>
+            </div>
+            <div class="certificate-actions">
+              <a class="secondary-btn" href="assets/certificates/sertifikat%20dicoding%204.pdf" target="_blank" rel="noopener">Lihat Sertifikat</a>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-preview">Cisco</div>
+            <div>
+              <h3>Cisco Networking Academy</h3>
+              <p>Sertifikat pembelajaran jaringan komputer dari Cisco Networking Academy.</p>
+            </div>
+            <div class="certificate-actions">
+              <a class="secondary-btn" href="assets/certificates/certificate%20cisco%201.pdf" target="_blank" rel="noopener">Lihat Sertifikat</a>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-preview">Network</div>
+            <div>
+              <h3>Fundamental of Associate Network Administrator</h3>
+              <p>Sertifikat nasional tentang dasar-dasar administrasi jaringan komputer.</p>
+            </div>
+            <div class="certificate-actions">
+              <a class="secondary-btn" href="assets/certificates/Sertifikat_ZAHRAN%20AL%20SYAFIT_Fundamental%20of%20Associate%20Network%20Administrator%20-%20Nasional.pdf" target="_blank" rel="noopener">Lihat Sertifikat</a>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-preview">Cyber</div>
+            <div>
+              <h3>Introduction to Cyber Security</h3>
+              <p>Sertifikat pengenalan cyber security dan kesadaran karier di bidang keamanan digital.</p>
+            </div>
+            <div class="certificate-actions">
+              <a class="secondary-btn" href="assets/certificates/Sertifikat_ZAHRAN%20AL%20SYAFIT_Introduction%20to%20Cyber%20Security%20and%20Career%20Awareness.pdf" target="_blank" rel="noopener">Lihat Sertifikat</a>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-preview">Cyber</div>
+            <div>
+              <h3>Ethical Hacker For Dummies</h3>
+              <p>Sertifikat pembelajaran dasar ethical hacking dan wawasan keamanan sistem.</p>
+            </div>
+            <div class="certificate-actions">
+              <a class="secondary-btn" href="assets/certificates/Sertifikat_ZAHRAN%20AL%20SYAFIT_Ethical%20Hacker%20For%20Dummies.pdf" target="_blank" rel="noopener">Lihat Sertifikat</a>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-preview">Digital</div>
+            <div>
+              <h3>Keamanan Digital</h3>
+              <p>Sertifikat tentang pentingnya menjaga keamanan digital dan perlindungan diri di dunia maya.</p>
+            </div>
+            <div class="certificate-actions">
+              <a class="secondary-btn" href="assets/certificates/Sertifikat_ZAHRAN%20AL%20SYAFIT_Pentingnya%20Menjaga%20Keamanan%20Digital_%20Perlindungan%20Diri%20di%20Dunia%20Maya.pdf" target="_blank" rel="noopener">Lihat Sertifikat</a>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-preview">Speaking</div>
+            <div>
+              <h3>Seni Public Speaking</h3>
+              <p>Sertifikat public speaking untuk pemimpin muda berkarakter.</p>
+            </div>
+            <div class="certificate-actions">
+              <a class="secondary-btn" href="assets/certificates/Sertifikat_ZAHRAN%20AL%20SYAFIT_Seni%20Public%20Speaking%20Untuk%20Pemimpin%20Muda%20Berkarakter.pdf" target="_blank" rel="noopener">Lihat Sertifikat</a>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-preview">English</div>
+            <div>
+              <h3>Sertifikat Bahasa Inggris</h3>
+              <p>Sertifikat kemampuan atau pembelajaran bahasa Inggris.</p>
+            </div>
+            <div class="certificate-actions">
+              <a class="secondary-btn" href="assets/certificates/sertifikat%20inggris.pdf" target="_blank" rel="noopener">Lihat Sertifikat</a>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-preview">Japanese</div>
+            <div>
+              <h3>Sertifikat Bahasa Jepang</h3>
+              <p>Sertifikat kemampuan atau pembelajaran bahasa Jepang.</p>
+            </div>
+            <div class="certificate-actions">
+              <a class="secondary-btn" href="assets/certificates/sertifikat%20jepang.pdf" target="_blank" rel="noopener">Lihat Sertifikat</a>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-preview">Tasheel</div>
+            <div>
+              <h3>Sertifikat Tasheel</h3>
+              <p>Sertifikat Tasheel sebagai bagian dari pembelajaran dan pencapaian pribadi.</p>
+            </div>
+            <div class="certificate-actions">
+              <a class="secondary-btn" href="assets/certificates/sertifikat-tasheel.pdf" target="_blank" rel="noopener">Lihat Sertifikat</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="site-shell">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Pengalaman</p>
+            <h2>Belajar memimpin, berbicara, dan berkembang.</h2>
+          </div>
+          <p>Pengalaman non-teknis menjadi fondasi penting untuk membangun kepercayaan diri dan tanggung jawab.</p>
+        </div>
+
+        <div class="experience-grid">
+          <article class="experience-card">
+            <h3>Leadership Experience</h3>
+            <p>Pernah menjabat sebagai Ketua ORSAN selama satu tahun, memimpin organisasi, mengatur kegiatan, dan bekerja sama dalam tim.</p>
+          </article>
+          <article class="experience-card">
+            <h3>Religious & Public Speaking</h3>
+            <p>Memiliki pengalaman dalam Fahmil Qur'an, hafalan Al-Qur'an, kultum, pidato Islami, dan public speaking.</p>
+          </article>
+          <article class="experience-card">
+            <h3>Training & Learning Achievement</h3>
+            <p>Pernah mengikuti pembelajaran teknologi seperti Dicoding, Cisco Networking Academy, dan Digital Talent.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="site-shell">
+        <div class="contact-box">
+          <div>
+            <p class="section-kicker">Kontak</p>
+            <h2>Mari terhubung.</h2>
+            <p>Saya terbuka untuk diskusi project, kolaborasi, presentasi, dan kesempatan belajar baru di bidang teknologi maupun pengembangan diri.</p>
+          </div>
+          <a class="primary-btn" href="https://wa.me/6281376917611" target="_blank" rel="noopener">WhatsApp 081376917611</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="site-shell footer-inner">
+      <span>&copy; 2026 Zahran Al Syafit</span>
+      <span>Portfolio TKJ, IoT, Web Development, dan Leadership</span>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll(".certificate-card").forEach((card) => {
+      const preview = card.querySelector(".certificate-preview");
+      const link = card.querySelector(".certificate-actions a");
+
+      if (!preview || !link) {
+        return;
+      }
+
+      const label = preview.textContent.trim();
+      const frame = document.createElement("iframe");
+      frame.title = `Preview sertifikat ${label}`;
+      frame.loading = "lazy";
+      frame.src = `${link.href}#toolbar=0&navpanes=0&scrollbar=0&page=1&view=FitH`;
+
+      const fallback = document.createElement("span");
+      fallback.className = "certificate-fallback";
+      fallback.textContent = label;
+
+      const badge = document.createElement("span");
+      badge.className = "certificate-label";
+      badge.textContent = label;
+
+      preview.textContent = "";
+      preview.classList.add("is-pdf");
+      preview.append(frame, fallback, badge);
+    });
+  </script>
+</body>
+</html>

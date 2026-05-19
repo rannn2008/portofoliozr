@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV Zahran Al Syafit, siswa TKJ dengan minat pada IoT, jaringan komputer, web development, leadership, dan public speaking.">
+  <title>CV Zahran Al Syafit</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --ink: #111827;
+      --muted: #526071;
+      --line: #d9e1ea;
+      --soft: #f5f8fb;
+      --cyan: #098fa1;
+      --green: #118854;
+      --amber: #b56c13;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #e8eef5;
+      color: var(--ink);
+      line-height: 1.55;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      width: min(980px, calc(100% - 28px));
+      margin: 28px auto;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 24px 80px rgba(17, 24, 39, 0.16);
+      overflow: hidden;
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      width: min(980px, calc(100% - 28px));
+      margin: 18px auto 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      padding: 0 14px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .btn.primary {
+      border-color: transparent;
+      background: var(--ink);
+      color: #fff;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr 170px;
+      gap: 24px;
+      padding: 38px;
+      background:
+        linear-gradient(135deg, rgba(9, 143, 161, 0.1), rgba(17, 136, 84, 0.08)),
+        #fbfdff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .kicker {
+      color: var(--cyan);
+      font-size: 0.82rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin-top: 8px;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .role {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 1.08rem;
+      font-weight: 700;
+    }
+
+    .summary {
+      margin-top: 18px;
+      max-width: 720px;
+      color: var(--muted);
+    }
+
+    .photo {
+      position: relative;
+      aspect-ratio: 4 / 5;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(9, 143, 161, 0.14), rgba(181, 108, 19, 0.08));
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .photo span {
+      position: absolute;
+      inset: 0;
+      display: none;
+      place-items: center;
+      padding: 16px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 800;
+    }
+
+    .photo img[style*="display: none"] + span {
+      display: grid;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 30px;
+      padding: 34px 38px 40px;
+    }
+
+    section + section {
+      margin-top: 28px;
+    }
+
+    h2 {
+      padding-bottom: 9px;
+      border-bottom: 2px solid var(--line);
+      color: var(--ink);
+      font-size: 1.05rem;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .item {
+      margin-top: 16px;
+    }
+
+    .item h3 {
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+
+    .item p,
+    li {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    ul {
+      list-style: none;
+      display: grid;
+      gap: 9px;
+      margin-top: 14px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 16px;
+    }
+
+    li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.7em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--cyan);
+    }
+
+    .contact-list li {
+      padding-left: 0;
+    }
+
+    .contact-list li::before {
+      display: none;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .tag {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--soft);
+      color: var(--ink);
+      padding: 6px 9px;
+      font-size: 0.83rem;
+      font-weight: 800;
+    }
+
+    @media (max-width: 760px) {
+      header,
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      .photo {
+        max-width: 220px;
+      }
+
+      .toolbar {
+        flex-wrap: wrap;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .toolbar {
+        display: none;
+      }
+
+      .page {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+      }
+
+      header,
+      main {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a class="btn" href="index.html">Kembali ke Portfolio</a>
+    <button class="btn primary" type="button" onclick="window.print()">Cetak / Simpan PDF</button>
+  </div>
+
+  <div class="page">
+    <header>
+      <div>
+        <p class="kicker">Curriculum Vitae</p>
+        <h1>Zahran Al Syafit</h1>
+        <p class="role">Siswa TKJ | IoT Enthusiast | Web Development Learner</p>
+        <p class="summary">
+          Siswa kelas 12 yang memiliki minat besar dalam bidang teknologi, khususnya jaringan komputer, IoT, dan pengembangan proyek digital. Aktif belajar, membuat inovasi, mengembangkan ide bermanfaat, serta memiliki ketertarikan pada keagamaan, public speaking, dan pengembangan diri.
+        </p>
+      </div>
+      <div class="photo">
+        <img src="assets/profile.png" alt="Foto Zahran Al Syafit" onerror="this.style.display='none'">
+        <span>Foto asli: assets/profile.png</span>
+      </div>
+    </header>
+
+    <main>
+      <aside>
+        <section>
+          <h2>Kontak</h2>
+          <ul class="contact-list">
+            <li>WhatsApp: 081376917611</li>
+            <li>Portfolio: zahran-portfolio</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Skill Utama</h2>
+          <div class="tag-list">
+            <span class="tag">IoT</span>
+            <span class="tag">Networking</span>
+            <span class="tag">ESP32</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">Web Development</span>
+            <span class="tag">C++</span>
+            <span class="tag">Public Speaking</span>
+            <span class="tag">Leadership</span>
+            <span class="tag">Design</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Pembelajaran</h2>
+          <ul>
+            <li>Dicoding</li>
+            <li>Cisco Networking Academy</li>
+            <li>Digital Talent</li>
+          </ul>
+        </section>
+      </aside>
+
+      <div>
+        <section>
+          <h2>Project</h2>
+          <div class="item">
+            <h3>Spot Finder / Smart Parking System</h3>
+            <p>Project IoT untuk mendeteksi ketersediaan slot parkir otomatis menggunakan ESP32/Arduino, sensor ultrasonik, RFID, servo gate, OLED, dan LED indikator.</p>
+          </div>
+          <div class="item">
+            <h3>Smart Face & Voice Door Lock</h3>
+            <p>Konsep sistem keamanan pintu otomatis berbasis pengenalan wajah dan verifikasi suara menggunakan ESP32-CAM, voice recognition, dan solenoid/servo lock.</p>
+          </div>
+          <div class="item">
+            <h3>NeoID - Portable AI Identity</h3>
+            <p>Konsep KTP AI portabel yang dapat berbicara otomatis, digunakan offline, dan hanya aktif oleh pemiliknya.</p>
+          </div>
+          <div class="item">
+            <h3>Website Esteller ZR</h3>
+            <p>Website sederhana untuk usaha Esteller ZR yang dipublikasikan online menggunakan GitHub dan Vercel.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Pengalaman</h2>
+          <div class="item">
+            <h3>Ketua ORSAN</h3>
+            <p>Memimpin organisasi santri selama satu tahun, mengatur kegiatan, bertanggung jawab, dan bekerja sama dalam tim.</p>
+          </div>
+          <div class="item">
+            <h3>Religious & Public Speaking Experience</h3>
+            <p>Berpengalaman dalam Fahmil Qur'an, hafalan Al-Qur'an, kultum, pidato Islami, dan presentasi kegiatan sekolah maupun keagamaan.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
