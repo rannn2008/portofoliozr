@@ -49,7 +49,8 @@
           "name": "Ma'had Dar El Ilmi Sumatera Barat"
         }
       ],
-      "telephone": "+6281376917611"
+      "telephone": "+6281376917611",
+      "email": "zahranalsyafitdei@gmail.com"
     }
   </script>
   <style>
@@ -852,6 +853,13 @@
       color: var(--muted);
     }
 
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
     footer {
       border-top: 1px solid var(--line);
       padding: 26px 0;
@@ -951,6 +959,14 @@
       }
 
       .profile-actions a {
+        width: 100%;
+      }
+
+      .contact-actions {
+        justify-content: stretch;
+      }
+
+      .contact-actions a {
         width: 100%;
       }
 
@@ -1479,7 +1495,10 @@
             <h2>Mari terhubung.</h2>
             <p>Saya terbuka untuk diskusi project, kolaborasi, presentasi, dan kesempatan belajar baru di bidang teknologi maupun pengembangan diri.</p>
           </div>
-          <a class="primary-btn" href="https://wa.me/6281376917611" target="_blank" rel="noopener">WhatsApp 081376917611</a>
+          <div class="contact-actions">
+            <a class="primary-btn" href="https://wa.me/6281376917611" target="_blank" rel="noopener">WhatsApp 081376917611</a>
+            <a class="secondary-btn" href="mailto:zahranalsyafitdei@gmail.com">Email</a>
+          </div>
         </div>
       </div>
     </section>
